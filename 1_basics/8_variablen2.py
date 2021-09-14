@@ -19,6 +19,5 @@ rect2x = width() / 2
 rect2y = height() / 2
 rect2width = width() / 2
 rect2height = height() / 2
-
 rect(rect1x, rect1y, rect1width, rect1height)
 rect(rect2x, rect2y, rect2width, rect2height)
