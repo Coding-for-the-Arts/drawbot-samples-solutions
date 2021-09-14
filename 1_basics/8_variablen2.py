@@ -1,21 +1,24 @@
 """
 Variablen schreiben
+
+- Kannst du zwei Rechtecke so positionieren, dass das eine immer
+  das untere linke Viertel der Fläche ausfüllt und das andere
+  jeweils das obere rechte Viertel?
+- Kannst du es so einrichten, dass es auch funktioniert, wenn es
+  newPage("A4") heisst?
 """
-rect(10, 10, 200, 200)
 
-rect(100 + 100, 2 * 100, 400/2, 400 * 0.5)
+newPage("A4")
 
-posX = 200 + 200
-posY = 5 * 100
-side = 1000 - 700
+rect1x = 0
+rect1y = 0
+rect1width = width() / 2
+rect1height = height() / 2
 
-rect(posX, posY, side, side)
+rect2x = width() / 2
+rect2y = height() / 2
+rect2width = width() / 2
+rect2height = height() / 2
 
-"""
-Variablen:
-    - beginnen mit kleinbuchstaben
-    - keine Zahl als erstes Zeichen
-    - erlaubt: a-z, A-Z, 0-9, _ 
-    - Camel case: fooBarBaz 🐫
-    - Snake case: foo_bar_baz 🐍
-"""
+rect(rect1x, rect1y, rect1width, rect1height)
+rect(rect2x, rect2y, rect2width, rect2height)
