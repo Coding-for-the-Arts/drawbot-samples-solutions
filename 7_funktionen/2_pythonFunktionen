@@ -1,15 +1,5 @@
 """
 Python-Funktionen
-"""
 
-for i in range(10):
-    newRandomValue = random()
-    print(newRandomValue)
-
-"""
-range(), random() und print() sind Funktionen,
-die zur «Grundausstattung» von Python gehören. 
-
-Informationen und Beispiele dazu findest du in der Python-Dokumentation:
-z.B. https://docs.python.org/3/library/stdtypes.html#range
+Keine Lösung
 """
