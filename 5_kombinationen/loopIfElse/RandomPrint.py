@@ -1,19 +1,6 @@
 """
 Random Printmuster
 
-Das Programm zeichnet nichts auf die Fläche, sondern schreibt in die Konsole.
-"""
-
-for i in range(10):
-    randomNumber = random()
-    if randomNumber > 0.2:
-        print(" * " + "%")
-    else:
-        print(" % " + "#" )
-
-"""
-- Versuche, Schritt für Schritt nachzuvollziehen, was beim ausführen dieses Scripts passiert.
-- Eine (kleine) Herausforderung: Kannst du ein eigens, komplexeres Muster generieren?
 - Schaffst du es z.B. diesen Output auf der Konsole auszugeben?
 
 *** %%% *** %%%
@@ -22,5 +9,29 @@ for i in range(10):
 %%% *** %%% ***
 
 - Eine (grössere) Herausforderung: Pyramiden zu generieren.
-(Tipp für Forgeschrittene: Loop im Loop)
+
+* 
+* * 
+* * * 
+* * * * 
+* * * * * 
+
 """
+
+newPage(300, 300)
+
+# Pattern
+for i in range(4):
+    randomNumber = random()
+    if (i%2 ==0):
+        print(" *** " + " %%% " + " *** " + " %%% ")
+    else:
+         print(" %%% " + " *** " + " %%% " + " *** ")
+
+
+# Pyramid
+for i in range(6):
+    for j in range(i):
+        print('*', end=' ')
+    print('')
+
